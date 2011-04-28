@@ -4,5 +4,13 @@ spl_autoload_register('autoload_class');
 
 function autoload_class($class_name)
 {
-  require_once dirname(__FILE__) . "/$class_name.php";
+  $dirname = dirname(__FILE__);
+  $dirs = array("$dirname", "$dirname/yaml/lib/");
+  foreach ($dirs as $dir)
+  {
+    if (file_exists("$dir/$class_name.php"))
+    {
+      require_once "$dir/$class_name.php";
+    }
+  }
 }
