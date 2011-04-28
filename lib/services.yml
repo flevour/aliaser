@@ -1,5 +1,17 @@
 parameters:
-  dumper: StdoutDumper
+  ## Use the first configuration to test the aliases, the second one when ready to dump.
+  ## dumper.class: StdoutDumper
+  ## dumper.file: null
+  ## dumper.class: FileDumper
+  ## dumper.file: '/tmp/test'
+  dumper.class: StdoutDumper
+  dumper.file: null
+  runner.class: Runner
+  runner.conf_files: /Users/flevour/Dropbox/.passwords/aliaser/tests/fixtures
 services:
   dumper:
-    class: %dumper%
+    class: %dumper.class%
+    arguments: [%dumper.file%]
+  runner:
+    class: %runner.class%
+    arguments: [%runner.conf_files%, @dumper]
