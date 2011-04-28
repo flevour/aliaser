@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/!svn/ver/31565/components/yaml/trunk
+END
+LICENSE
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/!svn/ver/16752/components/yaml/trunk/LICENSE
+END
+package.xml
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/!svn/ver/31565/components/yaml/trunk/package.xml
+END
+README.markdown
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/!svn/ver/18628/components/yaml/trunk/README.markdown
+END
