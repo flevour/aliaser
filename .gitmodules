@@ -1,0 +1,3 @@
+[submodule "lib/vendor/dependency-injection"]
+	path = lib/vendor/dependency-injection
+	url = /Users/flevour/Sites/h-art/oviesse/project/lib/vendor/dependency-injection
