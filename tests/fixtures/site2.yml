@@ -1,0 +1,15 @@
+data:
+  svn: http://svn.example.com/project
+local:
+  path: /a/path
+  db:
+    name: db_name
+prod:
+  host: 127.0.0.1
+  user: prodUser
+  pass: prodPass
+  path: prod/path
+  db:
+    user: prod_db_user
+    pass: prod_db_pass
+    name: prod_db_host
