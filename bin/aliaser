@@ -1,0 +1,5 @@
+<?php
+require_once(dirname(__FILE__) . "/../lib/config.php");
+// $runner = new Runner(dirname(__FILE__) . "/tests/fixtures", new FileDumper("aliasss"));
+$runner = new Runner(dirname(__FILE__) . "/tests/fixtures", new StdoutDumper());
+$runner->run();
