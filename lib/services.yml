@@ -1,0 +1,5 @@
+parameters:
+  dumper: StdoutDumper
+services:
+  dumper:
+    class: %dumper%
