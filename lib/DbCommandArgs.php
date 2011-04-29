@@ -7,12 +7,12 @@ class DbCommandArgs
     $name = NULL,
     $host = NULL;
 
-  public function __construct($user, $pass, $name, $host = "localhost")
+  public function __construct($user, $pass, $name, $host)
   {
     $this->user = $user;
     $this->pass = $pass;
     $this->name = $name;
-    $this->host = $host;
+    $this->host = $host ? $host : "localhost";
   }
 
   public function getUser()
