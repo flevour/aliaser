@@ -1,0 +1,7 @@
+#!/bin/bash
+# Questo script copia la tua chiave pubblica sul server che passi come argomento e rende piu' gioiosa la tua vita. Mandami un pensiero positivo. Francesco Levorato
+if [ $# -lt 1 ]; then
+  echo Utilizzo: $0 username@server
+  exit
+fi
+cat ~/.ssh/id_dsa.pub | ssh $@ 'mkdir -p .ssh; cat >> .ssh/authorized_keys; chmod 700 .ssh; chmod 600 .ssh/authorized_keys'
