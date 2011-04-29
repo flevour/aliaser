@@ -19,6 +19,10 @@ function autoload_class($class_name)
 $sc = new sfServiceContainerBuilder();
 $loader = new sfServiceContainerLoaderFileYaml($sc);
 
+if (file_exists("$dirname/../config.yml"))
+{
+  $loader->load("$dirname/../config.yml");
+}
 $loader->load("$dirname/services.yml");
 DI::setInstance($sc);
 

@@ -7,7 +7,7 @@ parameters:
   dumper.class: StdoutDumper
   dumper.file: null
   runner.class: Runner
-  runner.conf_files: /Users/flevour/Dropbox/.passwords/aliaser/tests/fixtures
+  runner.conf_files: <?php echo dirname(__FILE__); ?>/../tests/fixtures
 services:
   dumper:
     class: %dumper.class%
